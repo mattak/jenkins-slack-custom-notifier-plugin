@@ -1,0 +1,15 @@
+<%
+    f = taglib('/lib/form')
+
+    f.entry(:title => 'token', :field => 'key', :description => 'slack token') do
+        f.textbox(:value => 'xxxxxx')
+    end
+
+    f.entry(:title => 'channel', :field => 'key', :description => 'slack post channel') do
+        f.textbox(:value => '#general')
+    end
+
+    f.entry(:title => 'message', :field => 'message', :description => 'slack message') do
+        f.textbox(:value => 'hello from plugin')
+    end
+%>
